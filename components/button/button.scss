@@ -1,0 +1,7 @@
+@use "uswds-core" as *;
+
+button {
+  // background-color: lightblue;
+  background-color: color("indigo-60v");
+  color: color("white");
+}
