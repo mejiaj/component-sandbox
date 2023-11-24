@@ -29,11 +29,11 @@ export const createHeader = ({ user, onLogout, onLogin, onCreateAccount }) => {
     const welcomeMessage = `<span class="welcome">Welcome, <b>${user.name}</b>!</span>`;
     account.innerHTML = welcomeMessage;
     account.appendChild(
-      createButton({ size: "small", label: "Log out", onClick: onLogout })
+      createButton({ size: "small", label: "Log out", onClick: onLogout }),
     );
   } else {
     account.appendChild(
-      createButton({ size: "small", label: "Log in", onClick: onLogin })
+      createButton({ size: "small", label: "Log in", onClick: onLogin }),
     );
     account.appendChild(
       createButton({
@@ -41,7 +41,7 @@ export const createHeader = ({ user, onLogout, onLogin, onCreateAccount }) => {
         label: "Sign up",
         onClick: onCreateAccount,
         primary: true,
-      })
+      }),
     );
   }
   wrapper.appendChild(account);
